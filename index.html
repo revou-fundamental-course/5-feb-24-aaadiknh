@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/script.js"></script>
+  <title>Konversi Suhu</title>
+</head>
+<body>
+  <div class="container">
+  <h1>Konversi Suhu</h1>
+    <div class="input-container">
+        <div class="inputSuhu">
+          <label for="inputSuhu"><b>Masukkan Suhu:</b></label><br>
+          <input type="number" name="inputSuhu" id="inputSuhu">
+        </div>
+    </div>
+
+    <div class="jenisSatuan">
+        <label for="jenisSatuanAwal"><b>Dari:</b></label>
+        <select id="jenisSatuanAwal">
+          <option value="celcius">Celsius</option>
+          <option value="reamur">Reamur</option>
+          <option value="fahrenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option>
+        </select>
+
+        <label for="jenisSatuanAkhir"><b>Ke:</b></label>
+        <select id="jenisSatuanAkhir">
+          <option value="celcius">Celsius</option>
+          <option value="reamur">Reamur</option>
+          <option value="fahrenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option>
+        </select>
+    </div>
+
+    <div class="hasilKonversi">
+      <label for="hasilKonversi"><b>Hasil:</b></label><br>
+      <input type="text" id="hasilKonversi">
+    </div>
+
+    <div id="rumusKonversi"></div>
+
+    <div class="button-container">
+      <button id="btnKonversi" onclick="konversiSuhu()"><b>Konversi</b></button>
+      <button id="btnHapus" onclick="hapusHasil()"><b>Hapus</b></button>
+    </div>
+    
+  </div>
+</body>
+</html>
